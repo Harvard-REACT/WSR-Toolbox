@@ -6,7 +6,7 @@
     <img align="center" src="figs/toolbox_logo.png" width="300" alt="WSR Toolbox">
   </a>
   <a href="https://www.seas.harvard.edu/">
-    <img align="right" src="figs/university_logo.png" width="150" alt="SEAS Harvard and CMU">
+    <img align="right" src="figs/univ_logo.png" width="150" alt="SEAS Harvard and CMU">
   </a>
 </div>
 <p>&nbsp;</p>
