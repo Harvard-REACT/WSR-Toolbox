@@ -1,16 +1,19 @@
 <div align="center">
   <a href="https://react.seas.harvard.edu//">
-    <img align="left" src="figs/REACT_logo.png" width="80" alt="REACT Lab">
+    <img align="left" src="figs/REACT_logo.jpg" width="110" alt="REACT Lab">
   </a>
-  <a href="https://www.mit.edu/~arosinol/">
-    <img align="center" src="docs/media/kimeravio_logo.png" width="150" alt="kimera">
+  <a href="">
+    <img align="center" src="" width="110" alt="">
   </a>
   <a href="https://www.seas.harvard.edu/">
-    <img align="right" src="figs/Harvard_logo" width="100" alt="SEAS Harvard">
+    <img align="right" src="figs/SEASLogo_RGB.jpg" width="150" alt="SEAS Harvard">
   </a>
 </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-# WSR-Toolbox
+# WSR Toolbox
+
 Index page for the WSR Toolbox
 
 
