@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://react.seas.harvard.edu//">
-    <img align="left" src="figs/lab_logo.png" width="150" alt="REACT Lab and WiTech Lab">
+    <img align="left" src="figs/lab_logo.png" width="180" alt="REACT Lab and WiTech Lab">
   </a>
   <a href="https://react.seas.harvard.edu/communication-sensor">
-    <img align="center" src="figs/toolbox_logo.png" width="300" alt="WSR Toolbox">
+    <img align="center" src="figs/toolbox_logo.png" width="350" alt="WSR Toolbox">
   </a>
   <a href="https://www.seas.harvard.edu/">
-    <img align="right" src="figs/univ_logo.png" width="150" alt="SEAS Harvard and CMU">
+    <img align="right" src="figs/univ_logo.png" width="160" alt="SEAS Harvard and CMU">
   </a>
 </div>
 <p>&nbsp;</p>
@@ -25,15 +25,15 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables r
 ``` 
 where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the position coordinates.
 
-The installation intructions can be found in the [wiki page: WSR Toolbox cpp](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/WSR-Toolbox-cpp).
+**Core Module:** The installation intructions can be found in the [wiki page: WSR Toolbox cpp](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/WSR-Toolbox-cpp).
 
 ### Architecture
 
 ![Testbed map](figs/toolbox_architecture.png)
 
 
-## Relevant code repositories:
-1. The core C++ library: [WSR-Toolbox-cpp] (https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
+## Code repositories:
+1. The core C++ library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
 2. Intel 5300 modified wifi driver and firmware : [WSR-WifiDriver](https://github.com/Harvard-REACT/WSR-WifiDriver)
 3. Supplementary tool: [WSR-Toolbox-linux-80211n-csitool-supplementary](https://github.com/Harvard-REACT/WSR-Toolbox-linux-80211n-csitool-supplementary)
 
