@@ -48,9 +48,9 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 
 ### AOA profile obtained using 3D robot motion
 <div align="center">
-  <img align="left" src="figs/drone_3D_motion.gif" width="300" alt="drone Trajectory">
-  <img align="center" src="figs/sample_3D_traj.png" width="300" alt="traj plot">
-  <img align="right" src="figs/sample_profile.png" width="250" alt="aoa profile">
+  <img align="left" src="figs/drone_3D_motion.gif" width="250" alt="drone Trajectory">
+  <img align="center" src="figs/sample_3D_traj.png" width="250" alt="traj plot">
+  <img align="right" src="figs/sample_profile.png" width="220" alt="aoa profile">
 </div>
 <p>&nbsp;</p>
 
