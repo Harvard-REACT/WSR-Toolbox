@@ -47,12 +47,17 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 ## Performance Evaluation
 
 ### AOA profile obtained using 3D robot motion
-![drone Trajectory](figs/drone_3D_motion.gif)&nbsp;&nbsp;![drone Trajectory plot](figs/sample_3D_traj.png)&nbsp;&nbsp;![aoa profile](figs/sample_aoa_profile.png)
+<div align="center">
+  <img align="left" src="figs/drone_3D_motion.gif" width="300" alt="drone Trajectory">
+  <img align="center" src="figs/sample_3D_traj.png" width="300" alt="traj plot">
+  <img align="right" src="figs/sample_profile.png" width="250" alt="aoa profile">
+</div>
+<p>&nbsp;</p>
 
 ### Use case: Localization
 ![Testbed map](figs/Localization_dataset_2D_traj.png)
 
-The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. The localization accuracy for non-line-of-sight obtained for one of our datasets:
+The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. The localization accuracy for non-line-of-sight using all onboard sensing obtained for one of our datasets:
 
 ![Localization NLOS accuracy](figs/NLOS_accuracy_using_thresholding.png)
 
