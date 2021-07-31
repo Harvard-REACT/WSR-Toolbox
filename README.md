@@ -67,8 +67,8 @@ The bearing angle i.e Angle-of-Arrival accuracy for a dataset in NLOS using grou
 
 The localization accuracy for non-line-of-sight using all onboard sensing obtained for one of our datasets:
 <div align="center">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="300" alt="Localization NLOS accuracy gt">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding.png" width="300" alt="Localization NLOS accuracy">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="400" alt="Localization NLOS accuracy gt">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding.png" width="400" alt="Localization NLOS accuracy">
 </div>
 <p>&nbsp;</p>
 
