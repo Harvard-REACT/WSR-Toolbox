@@ -57,10 +57,20 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 ### Use case: Localization
 ![Testbed map](figs/Localization_dataset_2D_traj.png)
 
-The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. The localization accuracy for non-line-of-sight using all onboard sensing obtained for one of our datasets:
+The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. 
 
-![Localization NLOS accuracy](figs/NLOS_accuracy_using_thresholding.png)
 
+The bearing angle i.e Angle-of-Arrival accuracy for a dataset in NLOS using groundtruth and T265 Tracking camera trajectory:
+![NLOS_Set_B_AOA](figs/NLOS_Set_B_2D_Trajectory_AOA_Accuracy_Results.png)
+
+
+
+The localization accuracy for non-line-of-sight using all onboard sensing obtained for one of our datasets:
+<div align="center">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="500" alt="Localization NLOS accuracy gt">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding.png" width="500" alt="Localization NLOS accuracy">
+</div>
+<p>&nbsp;</p>
 
 
 ## Citation
