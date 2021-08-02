@@ -17,7 +17,15 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables r
 
 ![Paper](figs/Paper_logo.png)
 
-The toolbox requires following resources
+### AOA profile obtained using 3D robot motion
+<div align="center">
+  <img align="left" src="figs/drone_3D_motion.gif" width="250" alt="drone Trajectory">
+  <img align="center" src="figs/sample_3D_traj.png" width="250" alt="traj plot">
+  <img align="right" src="figs/sample_profile.png" width="220" alt="aoa profile">
+</div>
+<p>&nbsp;</p>
+
+The toolbox requires following inputs
 1. Wireless channel data collected by both signal transmitting and receiving robots.
 2. Local displacement of the signal receiving robot. Any pose estimation sensor can be used as long as the input is provided in csv file in the following format:
 ```
@@ -36,10 +44,9 @@ where sec and nsec refer the local timestamp in seconds and nanoseconds respecti
 
 The wifidriver and supplementary tool repositories are a modified version of code released as part [Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/). A detailed explanation of design decision behind the modifications (i.e support for channel reprocity, handling packet collision) can be found in the publication [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]()
 
-### Architecture
+### Toolbox Architecture
 
-![Arch](figs/toolbox_architecture.png)
-
+![Arch](figs/system_architecture.png)
 
 ## Open-Source Datasets
 These dataset are collected for indoor environments in LOS and NLOS for different robot trajectories
@@ -48,28 +55,38 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 
 ## Performance Evaluation
 
-### AOA profile obtained using 3D robot motion
-<div align="center">
-  <img align="left" src="figs/drone_3D_motion.gif" width="250" alt="drone Trajectory">
-  <img align="center" src="figs/sample_3D_traj.png" width="250" alt="traj plot">
-  <img align="right" src="figs/sample_profile.png" width="220" alt="aoa profile">
-</div>
-<p>&nbsp;</p>
+### Workflow diagram for using with multiple robots
 
-The bearing angle i.e Angle-of-Arrival accuracy for a dataset in NLOS using groundtruth and T265 Tracking camera trajectory:
-![NLOS_Set_B_AOA](figs/NLOS_Set_B_2D_Trajectory_AOA_Accuracy_Results.png)
+![Arch](figs/toolbox_workflow.png)
 
 
-### Use case: Localization
+### Bearing (Angle-of-Arrival) accuracy using 2D trajectory and Localization usecase
+We test the localization accuracy for a RX ground robot in LOS and NLOS cluttered environment which is communicating with TX robots with known positions.
 ![Testbed map](figs/Localization_dataset_2D_traj.png)
 
-The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. The localization accuracy for non-line-of-sight using all onboard sensing obtained for one of our datasets:
+The bearing angle i.e Angle-of-Arrival accuracy in NLOS using groundtruth and T265 Tracking camera trajectory:
+![NLOS_Set_B_AOA](figs/NLOS_Set_A_B_2D_Trajectory_AOA_Accuracy_Results.png)
+
+The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. 
+
+The localization accuracy for non-line-of-sight by directly using the data
 
 <div align="center">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="400" alt="Localization NLOS accuracy gt">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding.png" width="400" alt="Localization NLOS accuracy">
+  <img align="center" src="figs/NLOS_accuracy_gt_traj.png" width="400" alt="Localization NLOS accuracy gt">
+  <img align="center" src="figs/NLOS_accuracy_camera_traj.png" width="400" alt="Localization NLOS accuracy">
 </div>
 <p>&nbsp;</p>
+
+The profile variance metric conveys the confidence in AOA estimation. We filter out "noisy" AOA estimates (highly impacted by signal multipath) using a variance threshold, which can be used to improve localization accuracy. About **x% of samples are rejected by this simple filtering method**
+
+<div align="center">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="400" alt="Localization NLOS accuracy gt with thresholding">
+  <img align="center" src="figs/NLOS_accuracy_using_thresholding_camera_traj.png" width="400" alt="Localization NLOS accuracy with thresholding">
+</div>
+<p>&nbsp;</p>
+
+
+### Bearing (Angle-of-Arrival) accuracy using 3D trajectory and Localization usecase (coming soon!)
 
 
 ## Citation
