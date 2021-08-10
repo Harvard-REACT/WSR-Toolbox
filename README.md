@@ -48,45 +48,14 @@ The wifidriver and supplementary tool repositories are a modified version of cod
 
 ![Arch](figs/system_architecture.png)
 
-## Open-Source Datasets
-These dataset are collected for indoor environments in LOS and NLOS for different robot trajectories
-1. [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
-
-
-## Performance Evaluation
-
 ### Workflow diagram for using with multiple robots
 
 ![Arch](figs/toolbox_workflow.png)
 
 
-### Bearing (Angle-of-Arrival) accuracy using 2D trajectory and Localization usecase
-We test the localization accuracy for a RX ground robot in LOS and NLOS cluttered environment which is communicating with TX robots with known positions.
-![Testbed map](figs/Localization_dataset_2D_traj.png)
-
-The bearing angle i.e Angle-of-Arrival accuracy in NLOS using groundtruth and T265 Tracking camera trajectory:
-![NLOS_Set_B_AOA](figs/NLOS_Set_A_B_2D_Trajectory_AOA_Accuracy_Results.png)
-
-The transmitting robot positions are assumed to be know. The receiving robot can localize itself using the bearing angle calculated from our framework. We use the profile variance metric discussed in [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]() to reject outlying measurements. 
-
-The localization accuracy for non-line-of-sight by directly using the data
-
-<div align="center">
-  <img align="center" src="figs/NLOS_accuracy_gt_traj.png" width="400" alt="Localization NLOS accuracy gt">
-  <img align="center" src="figs/NLOS_accuracy_camera_traj.png" width="400" alt="Localization NLOS accuracy">
-</div>
-<p>&nbsp;</p>
-
-The profile variance metric conveys the confidence in AOA estimation. We filter out "noisy" AOA estimates (highly impacted by signal multipath) using a variance threshold, which can be used to improve localization accuracy. About **x% of samples are rejected by this simple filtering method**
-
-<div align="center">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding_gt_traj.png" width="400" alt="Localization NLOS accuracy gt with thresholding">
-  <img align="center" src="figs/NLOS_accuracy_using_thresholding_camera_traj.png" width="400" alt="Localization NLOS accuracy with thresholding">
-</div>
-<p>&nbsp;</p>
-
-
-### Bearing (Angle-of-Arrival) accuracy using 3D trajectory and Localization usecase (coming soon!)
+## Open-Source Datasets
+These dataset are collected for indoor environments in LOS and NLOS for different robot trajectories
+1. [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
 
 
 ## Citation
