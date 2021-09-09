@@ -64,7 +64,7 @@ The wifidriver and supplementary tool repositories are a modified version of cod
 ![Arch](figs/toolbox_workflow.png)
 
 
-## Open-Source Datasets
+## Datasets
 These dataset are collected for indoor environments in LOS and NLOS for different robot trajectories
 1. [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
 
