@@ -26,21 +26,30 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables r
 <p>&nbsp;</p> -->
 
 The toolbox requires following inputs
-1. Channel State Information for both signal transmitting and receiving robots collected using WiFi card.
+1. Channel State Information (CSI) for both signal transmitting and receiving robots collected using a WiFi card.
 2. Local displacement of the signal receiving robot. 
 
+Additional details can be found in the [Wiki page] (https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation)
 
 ### Toolbox Architecture
 
 ![Arch](figs/system_architecture.png)
 
-The technical specifications of the toolbox components can be found in the wiki page ![here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Technical-Specifications)
+The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Technical-Specifications)
 
-<!-- Any inertial sensor can be used as long as the input is provided in csv file in the following format:
+## Hardware and software requirement
+1. Supported WiFi Cards for CSI data collection
+- [x] Intel 5300 WiFi card ([Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/))
+- [ ] Broadcom WiFi cards ([Nexmon CSI](https://github.com/seemoo-lab/nexmon_csi))
+
+Please refer the [CSI data collection wiki]() for detail specific to a WiFi card.
+
+2. Supported sensors for collecting robot displacement data 
+Any local inertial sensor can be used as long as the input is provided in csv file in the following format (minimum requirement):
 ```
-{sec,nsec,x,y,z,yaw,pitch}
+{sec,nsec,x,y,z,qx,qy,qz,qw}
 ``` 
-where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the position coordinates. -->
+where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor.
 
 ### Hardware and software requirement with installation steps
 1. Wifi Driver and firmware:  [WiFi Driver and Firmware for Wireless channel data (CSI) collection](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/WiFi-Driver-and-Firmware-for-Wireless-channel-data-(CSI)-collection) 
@@ -54,7 +63,6 @@ where sec and nsec refer the local timestamp in seconds and nanoseconds respecti
 The wifidriver and supplementary tool repositories are a modified version of code released as part [Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/). A detailed explanation of design decision behind the modifications (i.e support for channel reprocity, handling packet collision) can be found in the publication [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]()
 
 
-
 ### Workflow diagram for using with multiple robots
 
 ![Arch](figs/toolbox_workflow.png)
@@ -66,7 +74,7 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 
 
 ## Citation
-- [1] Jadhav Ninad*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**WSR: A WiFi Sensor for Collaborative Robotics**](https://arxiv.org/abs/2012.04174)
+- [1] Jadhav Ninad*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**WSR: A WiFi Sensor for Collaborative Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primary authors)
 
 ```bibtex
 @article{Jadhav2020WSRAW,
@@ -80,6 +88,15 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 
 - [2] Jadhav Ninad, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]().
  
+ ```bibtex
+@article{WSR_toolbox,
+  title={Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics},
+  author={Ninad Jadhav and Weiying Wang and Diana Zhang and Swarun Kumar and Stephanie Gil},
+  journal={},
+  year={},
+  volume={}
+}
+```
 
 ## Acknowledgments
 We  gratefully  acknowledge  funding  support  through  the NSF and MIT Lincoln Laboratories. Experiments were conducted in the the REACT Lab.
