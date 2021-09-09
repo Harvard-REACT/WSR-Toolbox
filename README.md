@@ -17,21 +17,30 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables r
 
 ![Paper](figs/Paper_logo.png)
 
-### AOA profile obtained using 3D robot motion
+<!-- ### AOA profile obtained using 3D robot motion
 <div align="center">
   <img align="left" src="figs/drone_3D_motion.gif" width="250" alt="drone Trajectory">
   <img align="center" src="figs/sample_3D_traj.png" width="250" alt="traj plot">
   <img align="right" src="figs/sample_profile.png" width="220" alt="aoa profile">
 </div>
-<p>&nbsp;</p>
+<p>&nbsp;</p> -->
 
 The toolbox requires following inputs
-1. Wireless channel data collected by both signal transmitting and receiving robots.
-2. Local displacement of the signal receiving robot. Any pose estimation sensor can be used as long as the input is provided in csv file in the following format:
+1. Channel State Information for both signal transmitting and receiving robots collected using WiFi card.
+2. Local displacement of the signal receiving robot. 
+
+
+### Toolbox Architecture
+
+![Arch](figs/system_architecture.png)
+
+The technical specifications of the toolbox components can be found in the wiki page ![here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Technical-Specifications)
+
+<!-- Any inertial sensor can be used as long as the input is provided in csv file in the following format:
 ```
 {sec,nsec,x,y,z,yaw,pitch}
 ``` 
-where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the position coordinates.
+where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the position coordinates. -->
 
 ### Hardware and software requirement with installation steps
 1. Wifi Driver and firmware:  [WiFi Driver and Firmware for Wireless channel data (CSI) collection](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/WiFi-Driver-and-Firmware-for-Wireless-channel-data-(CSI)-collection) 
@@ -44,9 +53,7 @@ where sec and nsec refer the local timestamp in seconds and nanoseconds respecti
 
 The wifidriver and supplementary tool repositories are a modified version of code released as part [Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/). A detailed explanation of design decision behind the modifications (i.e support for channel reprocity, handling packet collision) can be found in the publication [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]()
 
-### Toolbox Architecture
 
-![Arch](figs/system_architecture.png)
 
 ### Workflow diagram for using with multiple robots
 
