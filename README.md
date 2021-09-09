@@ -29,13 +29,13 @@ The toolbox requires following inputs
 1. Channel State Information (CSI) for both signal transmitting and receiving robots collected using a WiFi card.
 2. Local displacement of the signal receiving robot. 
 
-Additional details can be found in the [Wiki page] (https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation)
+Additional details can be found in the [Wiki page](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation)
 
 ### Toolbox Architecture
 
 ![Arch](figs/system_architecture.png)
 
-The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Technical-Specifications)
+The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/System-Architecture)
 
 ## Hardware and software requirement
 1. Supported WiFi Cards for CSI data collection
