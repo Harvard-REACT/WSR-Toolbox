@@ -49,7 +49,7 @@ Any local inertial sensor can be used as long as the input is provided in csv fi
 ```
 {sec,nsec,x,y,z,qx,qy,qz,qw}
 ``` 
-where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor.
+where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation) for additional details.
 
 ### Code repositories
 1. The core C++ library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
