@@ -37,14 +37,14 @@ The toolbox requires following inputs
 - [x] Intel 5300 WiFi card ([Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/))
 - [ ] Broadcom WiFi cards ([Nexmon CSI](https://github.com/seemoo-lab/nexmon_csi))
 
-Please refer the *Collecting CSI from WiFi cards* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation) complete installation details for a specific WiFi card.
+Please refer the *Collecting CSI from WiFi cards* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki) complete installation details for a specific WiFi card.
 
 2. Local displacement of the signal receiving robot. Supported sensors for collecting robot displacement data:<br />
 Any local inertial sensor can be used as long as the input is provided in csv file in the following format (minimum requirement):
 ```
 {sec,nsec,x,y,z,qx,qy,qz,qw}
 ``` 
-where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation) for additional details.
+where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki) for additional details.
 
 ## Code repositories
 1. The core C++ library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
