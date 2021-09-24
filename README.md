@@ -69,19 +69,7 @@ We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbo
 
 
 ## Citation
-- [1] Jadhav Ninad*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**WSR: A WiFi Sensor for Collaborative Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primary authors)
-
-```bibtex
-@article{Jadhav2020WSRAW,
-  title={WSR: A WiFi Sensor for Collaborative Robotics},
-  author={Ninad Jadhav and Weiying Wang and Diana Zhang and O. Khatib and Swarun Kumar and Stephanie Gil},
-  journal={ArXiv},
-  year={2020},
-  volume={abs/2012.04174}
-}
-```
-
-- [2] Jadhav Ninad, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]().
+- [1] Ninad Jadhav, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]().
  
  ```bibtex
 @article{WSR_toolbox,
@@ -90,6 +78,18 @@ We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbo
   journal={},
   year={},
   volume={}
+}
+```
+
+- [2] Ninad Jadhav*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**WSR: A WiFi Sensor for Collaborative Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primary authors)
+
+```bibtex
+@article{Jadhav2020WSRAW,
+  title={WSR: A WiFi Sensor for Collaborative Robotics},
+  author={Ninad Jadhav and Weiying Wang and Diana Zhang and O. Khatib and Swarun Kumar and Stephanie Gil},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2012.04174}
 }
 ```
 
