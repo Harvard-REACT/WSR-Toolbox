@@ -13,7 +13,12 @@
 
 # WiFi-Based  Relative  Bearing  Sensor
 
-WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables robots in a team to obtain relative bearing to each other by analyzing the phase of their communicated wireless signals as they traverse the environment. Importantly, this capability can be used in non-line-of-sight (NLOS) or visually degraded environements to recover relative spatial positioning information between robots with implications for localization, networking and security amongst others. This toolbox is designed for distributed deployment and real-time operation on robotic platforms using commodity hardware.
+WiFi-Sensor-for-Robotics (WSR) toolbox is an open source C++ framework. It is based on the theory akin to Synthetic Aperture Radar, developed in our prior works. It is motivated by the lack of easily deployable solutions that use robots' local resources (e.g WiFi) for sensing in NLOS It enables robots in a team to obtain information about each other, even in non-line-of-sight (NLOS) settings which is a very challenging problem in robotics. It does so by analyzing the phase of their communicated WiFi signals as the robots traverse the environment. Specifically, the toolbox allows robots to :-
+
+* Obtain relative bearing to each other with implications to localization, rendezvous and mapping etc.
+* Capture signal multipaths (i.e signal reflections and attenuations in the environment) in a *profile* with implications to maintaining communication quality in adhoc mobile robot networks or using the profiles as figerprints for spoof-resilience in robot networks.     
+
+The toolbox is designed for distributed and online deployment on robot platforms using commodity hardware and on-board sensors. 
 
 ![Paper](figs/Paper_logo.png)
 
@@ -25,46 +30,44 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source library, that enables r
 </div>
 <p>&nbsp;</p> -->
 
+## Input Sensor Requirements
+
 The toolbox requires following inputs
-1. Channel State Information (CSI) for both signal transmitting and receiving robots collected using a WiFi card.
-2. Local displacement of the signal receiving robot. 
-
-Additional details can be found in the [Wiki page](https://github.com/Harvard-REACT/WSR-Toolbox/wiki)
-
-### Toolbox Architecture
-
-![Arch](figs/system_architecture.png)
-
-The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/System-Architecture)
-
-## Hardware and software requirement
-1. Supported WiFi Cards for CSI data collection
+1. Channel State Information (CSI) for both signal transmitting and receiving robots collected using a WiFi card. Supported WiFi Cards for CSI data collection:<br />
 - [x] Intel 5300 WiFi card ([Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/))
 - [ ] Broadcom WiFi cards ([Nexmon CSI](https://github.com/seemoo-lab/nexmon_csi))
 
 Please refer the *Collecting CSI from WiFi cards* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation) complete installation details for a specific WiFi card.
 
-2. Supported sensors for collecting robot displacement data:<br />
+2. Local displacement of the signal receiving robot. Supported sensors for collecting robot displacement data:<br />
 Any local inertial sensor can be used as long as the input is provided in csv file in the following format (minimum requirement):
 ```
 {sec,nsec,x,y,z,qx,qy,qz,qw}
 ``` 
 where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/Documentation) for additional details.
 
-### Code repositories
+## Code repositories
 1. The core C++ library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
 2. Intel 5300 modified wifi driver and firmware : [WSR-WifiDriver](https://github.com/Harvard-REACT/WSR-WifiDriver)
 3. Supplementary tool: [WSR-Toolbox-linux-80211n-csitool-supplementary](https://github.com/Harvard-REACT/WSR-Toolbox-linux-80211n-csitool-supplementary)
 
 
-### Workflow diagram for using with multiple robots
+## Architecture
+
+![Arch](figs/system_architecture.png)
+
+The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/System-Architecture)
+
+
+## Workflow diagram for using with multiple robots
 
 ![Arch](figs/toolbox_workflow.png)
 
 
 ## Datasets
-These dataset are collected for indoor environments in LOS and NLOS for different robot trajectories
-1. [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
+We release datasets demonstrating its performance in NLOS and line-of-sight (LOS) settings for a multi-robot localization usecase. Empirical results show that the bearing estimation from our toolbox achieves mean accuracy of 5.10 degrees. This leads to a median error of 0.5m and 0.9m for localization in LOS and NLOS settings respectively, in a hardware deployment in an indoor office environment. 
+
+* [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
 
 
 ## Citation
@@ -93,8 +96,7 @@ These dataset are collected for indoor environments in LOS and NLOS for differen
 ```
 
 ## Acknowledgments
-We  gratefully  acknowledge  funding  support  through  the NSF and MIT Lincoln Laboratories. Experiments were conducted in the the REACT Lab.
+We gratefully acknowledge funding support through Lincoln Labs Line grant and NSF awards (grant numbers: 1845225, 1718435 and 1837607). Experiments were conducted in the the REACT Lab.
 
 ## License
-
 [BSD License](LICENSE.BSD)
