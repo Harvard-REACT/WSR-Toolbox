@@ -65,9 +65,7 @@ The technical specifications of the toolbox components can be found in the wiki 
 
 
 ## Datasets
-We release datasets demonstrating its performance in NLOS and line-of-sight (LOS) settings for a multi-robot localization usecase. Empirical results show that the bearing estimation from our toolbox achieves mean accuracy of 5.10 degrees. This leads to a median error of 0.5m and 0.9m for localization in LOS and NLOS settings respectively, in a hardware deployment in an indoor office environment. 
-
-* [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset)
+We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset) demonstrating its performance in NLOS and line-of-sight (LOS) settings for a multi-robot localization usecase. Empirical results show that the bearing estimation from our toolbox achieves mean accuracy of 5.10 degrees. This leads to a median error of 0.5m and 0.9m for localization in LOS and NLOS settings respectively, in a hardware deployment in an indoor office environment. Additioanl results for hardware experiements are available in *experiments section* of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki#experiment-results).  
 
 
 ## Citation
