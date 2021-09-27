@@ -47,10 +47,11 @@ Any local inertial sensor can be used as long as the input is provided in csv fi
 where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki) for additional details.
 
 ## Code repositories
-1. The core C++ library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
+1. The core library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
 2. Intel 5300 modified wifi driver and firmware : [WSR-WifiDriver](https://github.com/Harvard-REACT/WSR-WifiDriver)
 3. Supplementary tool: [WSR-Toolbox-linux-80211n-csitool-supplementary](https://github.com/Harvard-REACT/WSR-Toolbox-linux-80211n-csitool-supplementary)
 
+The Core library repository is the toolbox its readme has the required steps which give installation and dependency details. The WiFi driver and Supplementary tool repositories enable CSI data collection using intel 5300 WiFi card.
 
 ## Architecture
 
