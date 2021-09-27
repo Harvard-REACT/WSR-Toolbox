@@ -18,7 +18,7 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source C++ framework. It is ba
 * Obtain relative bearing to each other with implications to localization, rendezvous and mapping etc.
 * Capture signal multipaths (i.e signal reflections and attenuations in the environment) in a *profile* with implications to maintaining communication quality in adhoc mobile robot networks or using the profiles as figerprints for spoof-resilience in robot networks.     
 
-The toolbox is designed for distributed and online deployment on robot platforms using commodity hardware and on-board sensors. 
+The toolbox is designed for distributed and online deployment on robot platforms using commodity hardware and on-board sensors. In depth details are available in the [**Wiki Page**](https://github.com/Harvard-REACT/WSR-Toolbox/wiki).
 
 ![Paper](figs/Paper_logo.png)
 
