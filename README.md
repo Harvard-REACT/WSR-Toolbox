@@ -46,24 +46,18 @@ Any local inertial sensor can be used as long as the input is provided in csv fi
 ``` 
 where sec and nsec refer the local timestamp in seconds and nanoseconds respectively; {x,y,z} are the estimated position coordinates form the sensor. Please refer the *Collecting robot displacement* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki) for additional details.
 
-## Code repositories
-1. The core library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
-2. Intel 5300 modified wifi driver and firmware : [WSR-WifiDriver](https://github.com/Harvard-REACT/WSR-WifiDriver)
-3. Supplementary tool: [WSR-Toolbox-linux-80211n-csitool-supplementary](https://github.com/Harvard-REACT/WSR-Toolbox-linux-80211n-csitool-supplementary)
-
-The Core library repository is the toolbox its readme has the required steps which give installation and dependency details. The WiFi driver and Supplementary tool repositories enable CSI data collection using intel 5300 WiFi card.
-
 ## Architecture
 
 ![Arch](figs/system_architecture.png)
 
 The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/System-Architecture)
 
+## Code repositories
+1. The core library: [WSR-Toolbox-cpp](https://github.com/Harvard-REACT/WSR-Toolbox-cpp). 
+2. Intel 5300 modified wifi driver and firmware : [WSR-WifiDriver](https://github.com/Harvard-REACT/WSR-WifiDriver)
+3. Supplementary tool: [WSR-Toolbox-linux-80211n-csitool-supplementary](https://github.com/Harvard-REACT/WSR-Toolbox-linux-80211n-csitool-supplementary)
 
-## Workflow diagram for using with multiple robots
-
-![Arch](figs/toolbox_workflow.png)
-
+The Core library repository is the toolbox its readme has the required steps which give installation and dependency details. The WiFi driver and Supplementary tool repositories enable CSI data collection using intel 5300 WiFi card.
 
 ## Datasets
 We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbox-Dataset) demonstrating its performance in NLOS and line-of-sight (LOS) settings for a multi-robot localization usecase. Empirical results show that the bearing estimation from our toolbox achieves mean accuracy of 5.10 degrees. This leads to a median error of 0.5m and 0.9m for localization in LOS and NLOS settings respectively, in a hardware deployment in an indoor office environment. Additioanl results for hardware experiements are available in *experiments section* of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki#experiment-results).  
