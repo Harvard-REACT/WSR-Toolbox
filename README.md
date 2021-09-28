@@ -64,7 +64,7 @@ We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbo
 
 
 ## Citation
-- [1] Ninad Jadhav, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**]().
+- [1] Ninad Jadhav, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**](https://arxiv.org/abs/2109.12205).
  
  ```bibtex
 @article{WSR_toolbox,
