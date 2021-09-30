@@ -36,6 +36,7 @@ The toolbox requires following inputs
 1. Channel State Information (CSI) for both signal transmitting and receiving robots collected using a WiFi card. Supported WiFi Cards for CSI data collection:<br />
 - [x] Intel 5300 WiFi card ([Linux 802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/))
 - [ ] Broadcom WiFi cards ([Nexmon CSI](https://github.com/seemoo-lab/nexmon_csi))
+- [ ] Qualcom WiFI cards ([Atheros CSI Toolbox](https://wands.sg/research/wifi/AtherosCSI/))
 
 Please refer the *Collecting CSI from WiFi cards* section of the [wiki](https://github.com/Harvard-REACT/WSR-Toolbox/wiki) complete installation details for a specific WiFi card.
 
