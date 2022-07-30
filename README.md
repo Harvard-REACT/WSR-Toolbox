@@ -20,7 +20,7 @@ WiFi-Sensor-for-Robotics (WSR) toolbox is an open source C++ framework. It is ba
 
 The toolbox is designed for distributed and online deployment on robot platforms using commodity hardware and on-board sensors. **In depth details are available on the [Wiki Page](https://github.com/Harvard-REACT/WSR-Toolbox/wiki)**.
 
-![Paper](figs/Paper_logo.png)
+![Paper](figs/github_banner.png)
 
 <!-- ### AOA profile obtained using 3D robot motion
 <div align="center">
@@ -49,7 +49,7 @@ where sec and nsec refer the local timestamp in seconds and nanoseconds respecti
 
 ## Architecture
 
-![Arch](figs/system_architecture.png)
+![Arch](figs/system_architecture_v4_final.png)
 
 The technical specifications of the toolbox components can be found in the wiki page [here](https://github.com/Harvard-REACT/WSR-Toolbox/wiki/System-Architecture)
 
@@ -65,32 +65,32 @@ We release the [WSR-Toolbox-Dataset](https://github.com/Harvard-REACT/WSR-Toolbo
 
 
 ## Citation
-- [1] Ninad Jadhav, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics**](https://arxiv.org/abs/2109.12205).
+- [1] Ninad Jadhav, Weiying Wang, Diana Zhang, Swarun Kumar and Stephanie Gil. [**Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Framework  for  Robotics**](https://arxiv.org/abs/2109.12205).
  
  ```bibtex
-@article{WSR_toolbox,
+@article{Jadhav_WSR_toolbox,
   title={Toolbox  Release:  A  WiFi-Based  Relative  Bearing  Sensor  for  Robotics},
   author={Ninad Jadhav and Weiying Wang and Diana Zhang and Swarun Kumar and Stephanie Gil},
-  journal={},
-  year={},
+  conference={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2022}
+}
+```
+
+- [2] Ninad Jadhav*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**A Wireless Signal-Based Sensing
+Framework for Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primary authors)
+
+```bibtex
+@article{JadhavWangWSR,
+  title={A wireless signal-based sensing framework for robotics},
+  author={Ninad Jadhav and Weiying Wang and Diana Zhang and O. Khatib and Swarun Kumar and Stephanie Gil},
+  journal={International Journal of Robotics Research},
+  year={2022},
   volume={}
 }
 ```
 
-- [2] Ninad Jadhav*, Weiying Wang*, Diana Zhang, O. Khatib, Swarun Kumar and Stephanie Gil. [**WSR: A WiFi Sensor for Collaborative Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primary authors)
-
-```bibtex
-@article{Jadhav2020WSRAW,
-  title={WSR: A WiFi Sensor for Collaborative Robotics},
-  author={Ninad Jadhav and Weiying Wang and Diana Zhang and O. Khatib and Swarun Kumar and Stephanie Gil},
-  journal={ArXiv},
-  year={2020},
-  volume={abs/2012.04174}
-}
-```
-
 ## Acknowledgments
-We gratefully acknowledge funding support through Lincoln Labs Line grant and NSF awards (grant numbers: 1845225, 1718435 and 1837607). Experiments were conducted in the the REACT Lab.
+We gratefully acknowledge funding support through Lincoln Labs Line grant, Sloan Research Fellowship 2021 (FG-2020-13998), National Science Foundation CAREER Award [CNS-2114733] and grants (1718435, 1837607, 2106921, 2030154 and 2007786) and partial support through ONR YIP grant (N00014-21-1-2714). Experiments were conducted in the REACT Lab at Harvard University and Arizona State University.
 
 ## License
 [BSD License](LICENSE.BSD)
