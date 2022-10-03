@@ -90,7 +90,7 @@ Framework for Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primar
 ```
 
 ## Acknowledgments
-We gratefully acknowledge funding support by Sloan Research Fellowship 2021 (FG-2020-13998), National Science Foundation CAREER Award [CNS-2114733] and grants (1718435, 1837607, 2106921, 2030154 and 2007786) and partial support through ONR YIP grant (N00014-21-1-2714). Experiments were conducted in the REACT Lab at Harvard University and Arizona State University.
+We gratefully acknowledge funding support by Sloan Research Fellowship 2021 (FG-2020-13998), National Science Foundation CAREER Award [CNS-2114733] and grants (1718435, 1837607, 2106921, 2030154 and 2007786), Amazon Research Award (ARA) and partial support through ONR YIP grant (N00014-21-1-2714). Experiments were conducted in the REACT Lab at Harvard University and Arizona State University.
 
 ## License
 [BSD License](LICENSE.BSD)
