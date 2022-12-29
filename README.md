@@ -82,10 +82,11 @@ Framework for Robotics**](https://arxiv.org/abs/2012.04174) (* denotes co-primar
 ```bibtex
 @article{JadhavWangWSR,
   title={A wireless signal-based sensing framework for robotics},
-  author={Ninad Jadhav and Weiying Wang and Diana Zhang and O. Khatib and Swarun Kumar and Stephanie Gil},
-  journal={International Journal of Robotics Research},
-  year={2022},
-  volume={}
+  author={Ninad Jadhav and Weiying Wang and Diana Zhang and Oussama Khatib and Swarun Kumar and Stephanie Gil},
+  journal={The International Journal of Robotics Research},
+  year={2020},
+  volume={41},
+  pages={955 - 992}
 }
 ```
 
